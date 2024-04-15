@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+
+    .eor-2-2{
+      margin-top: 20px;
+    }
+    
+    .heading-eor{
+      text-align: start;
+    }
+    .eor-container{
+      padding: 0 15px;
+    }
+    .top{
+    margin-top: 38% ;
+    }
+    .top-1{
+      margin-top: 5%;
+    }
+    .box-flex{
+    display: flex;
+    
+    /* justify-content: space-evenly; */
+    /* justify-content:calc(100% - 50px); */
+    
+    }
+    .boxes{
+      display:grid;
+    
+      margin-left: 0;
+    }
+    .centered {
+    text-align: center;
+    }
+    
+      .container-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; /* Align container to the left */
+      
+        }
+      .box {
+          width: 80px;
+          height: 80px;
+          background-color:#F04D0C;
+          margin: 10px;
+          display: flex;
+          align-items: center; /* Align content to the start */
+          justify-content:center;
+          border: 5px solid #adabab;
+          
+          /* Align content to the start */
+      }
+      .line {
+          width: 2px;
+          background-color: transparent;
+          height: 100px; /* Adjust height as needed */
+          margin: 5px 0; /* Set margin for vertical alignment */
+          align-self: center; /* Align lines to the start */
+          border-left: 2px dotted black; /* Set border style to dotted */
+      }
+      .top-1,.top{
+          max-width: 300px;
+      }.eor-container{
+          display: flex;
+          justify-content:space-evenly;
+          margin: 0 auto;
+          max-width: 1800px;
+      }
+    
+      @media screen and (max-width: 600px) {
+          .box {
+              width: 80px;
+              height: 80px;
+          }
+          .line {
+              height: 80px;
+          }
+      }
+    </style>
+</head>
+<body>
+<div class="eor-container">
+  <div>
+      <img src="https://indo.mosaique.link/wp-content/uploads/2024/03/Screenshot-2024-03-25-at-11.35.43 AM.png" width="650" height="650" alt="">
+  </div>
+  <div class="title-page-6 mt-5">
+<div class="position-relative">
+<h4 class="position-absolute bottom-50 end-50 heading-eor">
+EOR採用ステップ</h4>
+<h5 class="eor-2-2">
+必要な人材の職務記述書
+</h5>
+</div>
+  <div class="box-flex">
+      <div class="boxes">
+          <div class="container-box">
+              <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+              <div class="line"></div>
+              <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+              <div class="line"></div>
+              <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+          </div>
+      </div>
+  <div>
+      <div class="top-1">
+          1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo facere mollitia eum pariatur consectetur quibusdam minus est, veritatis alias.
+      </div>
+      <div class="top">
+          2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo facere mollitia eum pariatur consectetur quibusdam minus est, veritatis alias.
+      </div>
+      <div class="top">
+          3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo facere mollitia eum pariatur consectetur quibusdam minus est, veritatis alias.
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of columns */
+        }
+        
+        .column {
+            flex: 1;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .span-two {
+            flex-basis: 100%; /* Full width */
+        }
+
+        .column.big {
+            flex: 2; /* Making it bigger */
+        }
+
+        .grid-eor-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of grid items */
+        
+            width: 100%; /* Center align items */
+        }
+
+        .grid-eor-box-2 {
+            margin: 20px;
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 768px) {
+            .column {
+                flex-basis: 100%; /* Full width on small screens */
+                margin-bottom: 10px; /* Add some space between columns */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-eor-container">    
+        <div class="grid-eor-box-2">
+            <img src="https://indo.mosaique.link/wp-content/uploads/2024/03/Screenshot-2024-03-25-at-11.35.43 AM.png" width="650" height="650" alt="">
+        </div>
+        <div class="container-box-column-2">
+            <div class="row">
+                <div class="column">Column 3</div>
+            </div>
+            <div class="row">
+                <div class="column span-two">
+                    <div class="column span-two">
+                        <div class="box-flex">
+                            <div class="boxes">
+                                <div class="container-box">
+                                    <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                                    <div class="line"></div>
+                                    <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                                    <div class="line"></div>
+                                    <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                                </div>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="column big">Column 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

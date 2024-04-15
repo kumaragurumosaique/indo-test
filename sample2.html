@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div Layout</title>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .row-eor-2 {
+        display: flex;
+    }
+    
+    .column {
+        flex: 1;
+        /* border: 1px solid black; */
+        padding: 0 30px 0 0;
+    }
+
+    .span-two {
+        flex: 0.1;
+        padding-left: 22px;
+    }
+    .column.big{
+        flex: 0.4;
+    }
+    .grid-eor-content-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .box {
+          width: 80px;
+          height: 80px;
+          background-color:#F04D0C;
+          margin: 10px;
+          display: flex;
+          align-items: center; /* Align content to the start */
+          justify-content:center;
+          border: 5px solid #adabab;
+          
+          /* Align content to the start */
+      }
+      .line {
+          width: 2px;
+          background-color: transparent;
+          height: 100px; /* Adjust height as needed */
+          margin: 5px 0;
+          position: fixed;
+          position: relative;
+          left: 50px;
+          /* Set margin for vertical alignment */
+          /* Align lines to the start */
+          border-left: 2px dotted black; /* Set border style to dotted */
+      }
+      .container-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; /* Align container to the left */
+      
+        }
+</style>
+</head>
+<body>
+    <div class="grid-eor-content-1" >
+<div class="grid-eor-box-2">
+<img src="https://indo.mosaique.link/wp-content/uploads/2024/03/Screenshot-2024-03-25-at-11.35.43 AM.png" width="650" height="650" alt="">
+</div>
+<div class="container-box-column-2">
+    <div class="row-eor-2">
+        <div class="column">Column 3ddddddddddddddddddddddddddddddddd</div>
+    </div>   
+    <div class="row-eor-2">
+        <div class="column span-two">
+            <div class="box-flex">
+                <div class="boxes">
+                    <div class="container-box">
+                        <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                        <div class="line"></div>
+                        <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                        <div class="line"></div>
+                        <div class="box"><img class="img-fluid" width="40" height="40" src="./assets/Images/box-1-eor.png" alt=""></div>
+                    </div>
+                </div>
+          
+            </div>
+        </div>
+        <div class="column big">
+           <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi necessitatibus facere voluptas culpa quibusdam in sapiente laborum accusantium deleniti repellendus!</p>
+           </div>
+        </div>
+    </div>
+    
+</div>
+    </div>
+
+</body>
+</html>
