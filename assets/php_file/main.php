@@ -36,10 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_message .= "Message:\n$message\n";
     
     // Send the email
-    if (mail($to, $subject, $email_message)) {
-        // If the email was sent successfully, redirect the user to a thank you page
-        header('Location: thank_you.html');
-    } else {
+    $mail_sent = mail($to, $subject, $email_message);
+if (!$mail_sent) {
+    $error_message = error_get_last()['message'];
+    echo "Error: $error_message";
+}
+ else {
         // If there was an error sending the email, display an error message
         echo 'There was a problem sending your message. Please try again later.';
     }
